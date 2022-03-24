@@ -1,0 +1,102 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .font {
+    font-family: "Inter", ‘Arial’, sans-serif;
+    font-style: Bold;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42.19px;
+    color: #025b6f;
+    margin-left: 28.47px;
+    margin-bottom: 40.53px;
+    margin-top: 106px;
+  }
+  
+  .style {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .styleUl {
+    padding: 0;
+  }
+  
+  .task {
+    position: relative;
+    min-height: 72.3px;
+    background: #f8f8f8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    list-style-type: none;
+    margin-left: 28.47px;
+    margin-right: 32.91px;
+  }
+  
+  .title {
+    //font-family: "Roboto";
+    font-family: "Inter", ‘Arial’, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    padding-top: 24.56px;
+    padding-left: 15.01px;
+    padding-right: 75px;
+  }
+  
+  .subtitle {
+    // font-family: "Roboto";
+    font-family: "Inter", ‘Arial’, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+    padding-top: 24.56px;
+    padding-left: 15.01px;
+    padding-right: 13.64px;
+    height: 113.23px;
+  }
+  
+  .done {
+    right: 42.29px;
+    top: 24.56px;
+    width: 21.83px;
+    height: 21.83px;
+    background-image: url(../../images/Vector.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center;
+    border: aliceblue;
+  }
+  
+  .del {
+    width: 21.83px;
+    height: 21.83px;
+    right: 16.37px;
+    top: 24.56px;
+    background-image: url(../../images/Vectordel.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center;
+    border: aliceblue;
+  }
+  
+  .button {
+    width: 410.62px;
+    height: 61.39px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: #025b6e;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    color: white;
+    border: aliceblue;
+  }
+  

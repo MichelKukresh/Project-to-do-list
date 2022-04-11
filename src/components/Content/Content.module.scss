@@ -1,6 +1,11 @@
 .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 1049px;
   max-width: 1440px;
   left: 0px;
   top: -19px;
   background: #f2f2f2;
+  margin-left: auto;
+  margin-right: auto;
 }

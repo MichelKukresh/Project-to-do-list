@@ -1,13 +1,15 @@
 import React from "react";
-import styles from "./Content.module.scss"
-import { Block } from "../Block/Block";
+import styles from "./Content.module.scss";
+import { CardNew } from "../CardNew/CardNew";
+import { CardToday } from "../CardToday/CardToday";
+import { CardTomorrow } from "../CardTomorrow/CardTomorrow";
 
 export const Content = () => {
-    return (
-        <div >
-            <Block/>
-        </div>
-    )
-
-}
-
+  return (
+    <div className={styles.wrapper}>
+      <CardNew />
+      <CardToday />
+      <CardTomorrow />
+    </div>
+  );
+};

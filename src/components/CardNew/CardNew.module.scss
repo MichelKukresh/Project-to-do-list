@@ -5,7 +5,7 @@
 }
 
 .font {
-  font-family: "Inter", ‘Arial’, sans-serif;
+  font-family: "Roboto", "Inter", ‘Arial’, sans-serif;
   font-style: Bold;
   font-weight: 700;
   font-size: 36px;
@@ -25,14 +25,27 @@
   border: 1px solid rgba(0, 0, 0, 0.26);
   box-sizing: border-box;
   border-radius: 5px;
+
+  &::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #e7e7e7;
+    margin-left: 10.51px;
+  }
 }
 
 .input__long {
-     height: 100.95px;
-   }
+  height: 100.95px;
+}
 
 .button {
-  width: 135.05px; 
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  width: 135.05px;
   height: 46.39px;
   align-items: center;
   margin-left: auto;

@@ -5,8 +5,9 @@ import styles from "./App.module.scss";
 export const App = () => {
     return (
         <div className={styles.wrapper}>
-            <Content/>
-            <div>Привет еще раз</div>
+            <Content/>            
         </div>
     )
 }
+
+

@@ -6,6 +6,7 @@ export const App = () => {
     return (
         <div className={styles.wrapper}>
             <Content/>
+            <div>Привет еще раз</div>
         </div>
     )
 }

@@ -27,13 +27,11 @@ export const Content = () => {
 
   const getPosts = async () => {
 
-    axios.get("https://my-json-server.typicode.com/MichelKukresh/Projekt/posts/1")
-    .then((res) => {
-      console.log(res);
-    })
-
-    //https://github.com/MichelKukresh/Projekt
-
+    //Тестовый запрос на свой сервер данные лежат в файле проекта db.json
+    // axios.get("https://my-json-server.typicode.com/MichelKukresh/Projekt/posts/1")
+    // .then((res) => {
+    //   console.log(res);
+    // }) 
 
     axios.get("https://jsonplaceholder.typicode.com/posts")
     .then((res) => {

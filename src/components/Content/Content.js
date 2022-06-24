@@ -5,24 +5,24 @@ import { CardToday } from "../CardToday/CardToday";
 import { CardTomorrow } from "../CardTomorrow/CardTomorrow";
 import axios from "axios";
 
-const cardsItem = [
-  {
-    id: 1,
-    title: "Lorem ipsum dolore",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tellus nulla sed vitae nisl. Vulputate orci commodo feugiat egestas malesuada vel sed scelerisque.",
-  },
-  { id: 2, title: "Lorem ipsum dolore", desc: "" },
-  {
-    id: 3,
-    title: "Lorem ipsum dolore",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tellus nulla sed vitae nisl. Vulputate orci commodo feugiat egestas malesuada vel sed scelerisque.",
-  },
-  { id: 4, title: "Lorem ipsum dolore", desc: "" },
-];
+// const cardsItem = [
+//   {
+//     id: 1,
+//     title: "Lorem ipsum dolore",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tellus nulla sed vitae nisl. Vulputate orci commodo feugiat egestas malesuada vel sed scelerisque.",
+//   },
+//   { id: 2, title: "Lorem ipsum dolore", desc: "" },
+//   {
+//     id: 3,
+//     title: "Lorem ipsum dolore",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tellus nulla sed vitae nisl. Vulputate orci commodo feugiat egestas malesuada vel sed scelerisque.",
+//   },
+//   { id: 4, title: "Lorem ipsum dolore", desc: "" },
+// ];
 
 export const Content = () => {
   const [title, setTitle] = useState("");
-  const [description, setdescription] = useState("");
+  const [body, setdescription] = useState("");
   const [cards, setCard] = useState([]);
 
   const getPosts = async () => {
@@ -57,14 +57,16 @@ export const Content = () => {
 
   const changleDescription = (e) => {
     setdescription(e.currentTarget.value);
-    console.log(description);
+    console.log(body);
   };
+
+
 
   const addCard = () => {
     console.log("Меня нажали");
 
     //cards.push({id: new Date().getTime(), title, desc: "Пусто"})
-    setCard([...cards, { id: new Date().getTime(), title, desc: "Пусто" }]);
+    setCard([ { id: new Date().getTime(), title, body}, ...cards]);
     setTitle("");
   };
 
@@ -78,10 +80,10 @@ export const Content = () => {
       <CardNew
         title={title}
         changleTitle={changleTitle}
-        description={description}
+        description={body}
         changleDescription={changleDescription}
         buttonClick={addCard}
-      />
+      />     
       <CardToday cards={cards} deleteItem={deleteItem}/>
       <CardTomorrow />
     </div>

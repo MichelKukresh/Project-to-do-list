@@ -12,4 +12,4 @@ ReactDOM.render(
 )
 
 
-//https://first-regret.surge.sh/ "homepage": "https://https://michelkukresh.github.io/Projekt/",
+//https://first-regret.surge.sh/ "homepage": "https://https://michelkukresh.github.io/Project-to-do-list/",

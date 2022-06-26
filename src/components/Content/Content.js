@@ -28,14 +28,14 @@ export const Content = () => {
   const getPosts = async () => {
 
     //Тестовый запрос на свой сервер данные лежат в файле проекта db.json
-    // axios.get("https://my-json-server.typicode.com/MichelKukresh/Projekt/posts/1")
-    // .then((res) => {
-    //   console.log(res);
-    // }) 
+    axios.get("https://my-json-server.typicode.com/MichelKukresh/Project-to-do-list/posts/1")
+    .then((res) => {
+      console.log(res);
+    }) 
 
     axios.get("https://jsonplaceholder.typicode.com/posts")
     .then((res) => {
-      console.log(res.data);
+      //console.log(res.data);
       setCard(res.data);
     })
     .catch(err => {

@@ -35,7 +35,7 @@ export const Content = () => {
 
     axios.get("https://jsonplaceholder.typicode.com/posts")
     .then((res) => {
-      //console.log(res.data);
+      console.log(res.data);
       setCard(res.data);
     })
     .catch(err => {

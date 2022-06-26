@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Projekt/static/css/main.55501d9b.css",
-    "main.js": "/Projekt/static/js/main.057ad8d1.js",
-    "static/media/Vectordel.svg": "/Projekt/static/media/Vectordel.fc0e768260e95d12fa0b.svg",
-    "static/media/Vector.svg": "/Projekt/static/media/Vector.aa1292867e06ceacaf60.svg",
-    "static/media/VectorGrey.svg": "/Projekt/static/media/VectorGrey.562496c43965446c85ca.svg",
-    "index.html": "/Projekt/index.html",
-    "main.55501d9b.css.map": "/Projekt/static/css/main.55501d9b.css.map",
-    "main.057ad8d1.js.map": "/Projekt/static/js/main.057ad8d1.js.map"
+    "main.css": "/Project-to-do-list/static/css/main.dabdf05f.css",
+    "main.js": "/Project-to-do-list/static/js/main.2865fd21.js",
+    "static/media/Vectordel.svg": "/Project-to-do-list/static/media/Vectordel.fc0e768260e95d12fa0b.svg",
+    "static/media/Vector.svg": "/Project-to-do-list/static/media/Vector.aa1292867e06ceacaf60.svg",
+    "static/media/VectorGrey.svg": "/Project-to-do-list/static/media/VectorGrey.562496c43965446c85ca.svg",
+    "index.html": "/Project-to-do-list/index.html",
+    "main.dabdf05f.css.map": "/Project-to-do-list/static/css/main.dabdf05f.css.map",
+    "main.2865fd21.js.map": "/Project-to-do-list/static/js/main.2865fd21.js.map"
   },
   "entrypoints": [
-    "static/css/main.55501d9b.css",
-    "static/js/main.057ad8d1.js"
+    "static/css/main.dabdf05f.css",
+    "static/js/main.2865fd21.js"
   ]
 }

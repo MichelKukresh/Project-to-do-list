@@ -2,15 +2,20 @@ import React from "react";
 import styles from "./CardToday.module.scss";
 import { CardToDoItem } from "../CardToday/CardToDoItem";
 
-export const CardToday = ({ cards, deleteItem }) => {
+export const CardToday = ({ cards, deleteItem, handleClickGetTomorrow }) => {
   const items = cards.map((i) => (
     <CardToDoItem
       id={i.id}
       title={i.title}
       desc={i.body}
       deleteItem={deleteItem}
+      handleClickGetTomorrow={handleClickGetTomorrow}
     />
   ));
+
+ 
+
+  
 
   return (
     <div className={styles.wrapper}>

@@ -1,26 +1,25 @@
 import React from "react";
+import { CardToDoItem } from "../CardToday/CardToDoItem";
 import styles from "./CardTomorrow.module.scss";
 
-export const CardTomorrow = () => {
-    return (
-        <div className={styles.wrapper}>
-  <h2 className={styles.font}>My tomorrow todo</h2>
-  <ul className={styles.styleUl}>
-    <li className={`${styles.style} ${styles.task}` }>
-      <h3 className={styles.title}>Lorem ipsum dolore</h3>
-      <button className={styles.done}/>
-      <button className={styles.del}/>
-      <p className={styles.subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tellus nulla sed vitae nisl. Vulputate orci commodo feugiat egestas malesuada vel sed scelerisque.</p>
-    </li>
-    <li className={`${styles.style} ${styles.task}` }>
-      <h3 className={styles.title}>Lorem ipsum dolore</h3>
-      <button className={styles.done}/>
-      <button className={styles.del}/>
-      <p className={styles.subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tellus nulla sed vitae nisl. Vulputate orci commodo feugiat egestas malesuada vel sed scelerisque.</p>
-    </li>
+export const CardTomorrow = (props) => {
+  const items = props.cardsTomorrow.map((i) => (
+    <CardToDoItem
+      id={i.id}
+      title={i.title}
+      desc={i.body}
+      //deleteItem={deleteItem}
+    />
+  ));
 
-  </ul>
-</div>
+  //&lt; <
 
-    )
-}
+  return (
+    <div className={styles.wrapper}>
+      <h2 className={styles.font}>My tomorrow todo</h2>
+      <ul className={styles.styleUl}>
+       {items}
+      </ul>
+    </div>
+  );
+};
